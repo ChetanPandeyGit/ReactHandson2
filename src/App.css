@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main {
   min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  font-family: 'Poppins';
+  padding: 3rem;
+  background: linear-gradient(to bottom, rgb(65, 177, 222), rgb(246, 131, 150), white);
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input {
+  background-color: rgb(170, 233, 212);
+  width: 15rem;
+  height: 3rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+input[type='submit'] {
+  background-color: aqua;
+}
+
+#output {
+  background-color: rgb(31, 222, 168);
+  border: 2px solid black;
+  height: fit-content;
+  width: 100%;
+  margin: .5rem auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  position: relative;
+ top: 10rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.record-display {  
+  background-color: rgb(219, 113, 214);
+  border: 2px solid black;
+  padding: 2rem 1rem;
+  border-radius: 1.5rem;
+  width: 47.8%;
+  font-size: 1.2rem;
+  margin: .8rem;
 }
